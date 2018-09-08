@@ -1,0 +1,21 @@
+<% include partials/header %>
+
+<div class="ui main text container segment">
+    <div class="ui huge header">Nuevo producto</div>
+    <form class="ui form" action="/productos" method="POST">
+        <div class="field">
+            <label>Nombre</label>
+            <input type="text" name="producto[nombre]">
+        </div>
+        <div class="field">
+            <label>Image</label>
+            <input type="text" name="producto[imagen]">
+        </div>
+        <div class="field">
+            <label>Precio</label>
+            <input type="number" name="producto[precio]">
+        </div>
+        <button class="ui big violet basic button">Crear producto</button>
+    </form>
+</div>
+<% include partials/footer %>
